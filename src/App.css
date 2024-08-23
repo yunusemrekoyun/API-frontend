@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b19bb3;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Message Box */
+.message-box {
+    padding: 10px;
+    border-radius: 5px;
+    color: #155724;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.message-box.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.message-box.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.toggle-button:hover {
+    background-color: #f1faee;
+    color: #e63946;
+}
+
+/* User List */
+.user-list {
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+
+.user-list.hide {
+    max-height: 0;
+    padding: 0;
+}
+
+.user-list.show {
+    max-height: 500px; /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+/* Money Transfer and Add User */
+.money-transfer, .add-user {
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+
+.money-transfer.hide, .add-user.hide {
+    max-height: 0;
+    padding: 0;
+}
+
+.money-transfer.show, .add-user.show {
+    max-height: 500px; /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.form-group {
+margin-bottom: 10px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input {
+width: 100%;
+padding: 8px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+button {
+background-color: #e63946;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #f1faee;
+color: #e63946;
+}

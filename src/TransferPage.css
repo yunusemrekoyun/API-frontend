@@ -1,0 +1,41 @@
+/* TransferPage için özel stil ayarları */
+.money-transfer {
+    display: none; /* Başlangıçta gizle */
+}
+
+.money-transfer.open {
+    display: block;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.popup.success {
+    border-color: #4CAF50;
+}
+
+.popup.error {
+    border-color: #F44336;
+}
